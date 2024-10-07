@@ -1,0 +1,108 @@
+.horizontal-scroll-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  position: relative; 
+}
+
+.card-wrapper-with-arrows {
+  display: flex;
+  align-items: center;
+  position: relative; 
+  height: 100%; 
+  width: 100%; 
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 100%; 
+}
+
+.example-card {
+  width: 100vw; 
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.example-card img {
+  width: 100%; 
+  height: auto; 
+}
+
+.mat-card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.left-arrow, .right-arrow {
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%); 
+  z-index: 1; 
+  background-color: rgba(255, 255, 255, 0.7); 
+  border-radius: 50%; 
+}
+
+.left-arrow { left: 10px; }
+.right-arrow { right: 10px; }
+
+@media (max-width: 768px) {
+  .example-card { width: 100vw; height: 100vh; }
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between; 
+  padding: 10px; 
+}
+
+.right-buttons {
+  display: flex; 
+  gap: 10px; 
+}
+
+button {
+  border-radius: 5px; 
+  border: none; 
+  outline: none; 
+}
+
+.yesBtn {
+  background-color: #007bff; 
+  color: white; 
+  padding: 10px; 
+  transition: background-color 0.3s; 
+}
+
+.yesBtn:hover { background-color: #0056b3; }
+
+.noBtn {
+  background-color: #dc3545; 
+  color: white; 
+  padding: 10px; 
+  transition: background-color 0.3s; 
+}
+
+.noBtn:hover { background-color: #c82333; }
+
+button.color-accent {
+  background-color: #28a745; 
+  color: white; 
+  padding: 10px; 
+  transition: background-color 0.3s; 
+}
+
+button.color-accent:hover { background-color: #218838; }

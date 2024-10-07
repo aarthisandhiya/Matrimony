@@ -1,0 +1,36 @@
+<div class="horizontal-scroll-container" *ngIf="profileInfo && profileInfo.length">
+  <div class="card-wrapper-with-arrows">
+    <button mat-icon-button class="left-arrow" (click)="previousCard()" [disabled]="currentIndex === 0">
+      <mat-icon>chevron_left</mat-icon>
+    </button>
+    <div class="card-wrapper">
+      <mat-card class="example-card" appearance="outlined" *ngFor="let profile of visibleProfiles">
+        <img mat-card-image [src]="profile.image" alt="Profile Image">
+        <mat-card-content>
+          <p><b style="font-size: 25px;">{{profile.name}}</b></p>
+          {{profile.age}}, {{profile.height}}, {{profile.language}}, {{profile.caste}}, 
+          {{profile.designation}}, {{profile.address.city}}, {{profile.address.state}}, 
+          {{profile.address.country}}
+        </mat-card-content>
+        <mat-card-actions class="card-actions">
+          <button mat-icon-button color="accent" (click)="onShortlist(profile.id)">
+            <mat-icon>star</mat-icon><sup style="font-size: medium;">Shortlist</sup>
+          </button>
+          
+          <div class="right-buttons">
+            <button class="yesBtn" mat-icon-button color="primary" (click)="onYes(profile.id)">
+              <mat-icon style="font-size: 20px;">check</mat-icon>
+            </button>
+            <button class="noBtn" mat-icon-button color="warn" (click)="onNo(profile.id)">
+              <sup style="font-size: medium;">Like her?</sup><mat-icon>close</mat-icon>
+            </button>
+          </div>
+        </mat-card-actions>        
+      </mat-card>
+    </div>
+    <button mat-icon-button class="right-arrow" (click)="nextCard()" [disabled]="currentIndex + cardsToShow >= profileInfo.length">
+      <mat-icon>chevron_right</mat-icon>
+    </button>
+
+  </div>
+</div>

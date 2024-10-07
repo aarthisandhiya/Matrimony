@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "age": "28 yrs",
+    "height": "5 feet 11 in",
+    "caste": "Brahmin",
+    "designation": "Software Developer",
+    "address": {
+      "street": "1234 Elm Street",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "country": "India",
+      "zip": "600001"
+    },
+    "bio": "I am a software developer who loves to travel and explore new cultures.",
+    "image": "assets/images/image1.jpg",
+    "language": "English"
+  },
+  {
+    "id": 2,
+    "name": "Jane Doe",
+    "age": "25 yrs",
+    "height": "5 feet 4 in",
+    "caste": "Kshatriya",
+    "designation": "Graphic Designer",
+    "address": {
+      "street": "5678 Oak Street",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "country": "India",
+      "zip": "560001"
+    },
+    "bio": "Creative graphic designer with a passion for art and visual storytelling.",
+    "image": "assets/images/image2.jpg",
+    "language": "Kannada"
+  },
+  {
+    "id": 3,
+    "name": "Rahul Kumar",
+    "age": "30 yrs",
+    "height": "6 feet 1 in",
+    "caste": "Vaishya",
+    "designation": "Business Analyst",
+    "address": {
+      "street": "910 Pine Street",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "zip": "400001"
+    },
+    "bio": "Business analyst with 8 years of experience in the finance industry.",
+    "image": "assets/images/image3.jpg",
+    "language": "Marathi"
+  },
+  {
+    "id": 4,
+    "name": "Priya Sharma",
+    "age": "27 yrs",
+    "height": "5 feet 6 in",
+    "caste": "Kayastha",
+    "designation": "MBBS Doctor",
+    "address": {
+      "street": "45 Maple Avenue",
+      "city": "Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "zip": "110001"
+    },
+    "bio": "A dedicated doctor who enjoys working with patients and contributing to society.",
+    "image": "assets/images/image4.jpg",
+    "language": "Hindi"
+  },
+  {
+    "id": 5,
+    "name": "Amit Patel",
+    "age": "29 yrs",
+    "height": "5 feet 9 in",
+    "caste": "Patel",
+    "designation": "Civil Engineer",
+    "address": {
+      "street": "15 Willow Lane",
+      "city": "Ahmedabad",
+      "state": "Gujarat",
+      "country": "India",
+      "zip": "380001"
+    },
+    "bio": "A civil engineer passionate about sustainable architecture and design.",
+    "image": "assets/images/image5.jpg",
+    "language": "Gujarati"
+  }
+]

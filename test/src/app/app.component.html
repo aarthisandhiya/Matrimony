@@ -1,0 +1,27 @@
+<div class="parent" *ngIf="!navigated">
+  <div class="header">
+    <p>My matches</p>
+    <div class="profile-info">
+      <p>{{ profiles.length }} Profiles pending with me<button mat-button class="new-button">5 new</button></p>
+    </div>
+  </div>  
+  
+  <div class="horizontal-scroll-container">
+    
+    <mat-card (click)="navigate(data.id)" class="example-card" appearance="outlined" *ngFor="let data of profiles">
+      <img mat-card-image [src]="data.image" alt="Photo of a Profile">
+      <mat-card-content>
+        <p><b style="font-size: 20px;">{{ data.name }}</b></p>
+        {{ data.name }}, {{ data.age }}, {{ data.height }}, {{ data.language }}, {{ data.caste }}, {{ data.designation }}, {{ data.address.city }}, {{ data.address.state }}, {{ data.address.country }}
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button class="yesButton" (click)="navigate(data.id)">Yes</button>
+        <button mat-button class="noButton">No</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+
+<div *ngIf="navigated">
+  <router-outlet></router-outlet>
+</div>
